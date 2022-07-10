@@ -6,11 +6,11 @@ g.did_load_filetypes = 0
 g.do_filetype_lua = 1
 
 opt.title = true
-opt.laststatus = 3  -- global statusline
+opt.clipboard = "unnamedplus"
 
 -- Indenting
 opt.expandtab = true
-opt.shiftwidth = 4
+opt.shiftwidth = 2
 opt.smartindent = true
 opt.smarttab = true
 
@@ -24,4 +24,18 @@ opt.number = true
 opt.numberwidth = 2
 opt.ruler = false
 
-opt.signcolumn = "yes"
+opt.signcolumn = "number"
+opt.splitbelow = true
+opt.splitright = true
+opt.tabstop = 8
+opt.termguicolors = true
+opt.timeoutlen = 400
+opt.undofile = true
+
+-- interval fro writing swap file to disk, also used by gitsigns
+opt.updatetime = 250
+
+-- vim.filetype = "plugin"
+vim.foldmethod = "indent"
+
+g.mapleader = " "
