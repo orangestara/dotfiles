@@ -30,12 +30,14 @@
     - git
     - lsd
     - neovim --HEAD
+    - fastfetch
     - starship
     - yazi --HEAD
     - zsh
 
 - cask:
     - wezterm
+    - raycast
     - visual-studio-code
     - miniforge
     - font-fira-code-nerd-font
