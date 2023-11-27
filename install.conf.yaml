@@ -4,19 +4,6 @@
         relink: true
         force: true
 
-- clean: ['~']
-
-- link:
-    ~/.config/wezterm/wezterm.lua:
-        path: config/wezterm/wezterm.lua
-    ~/.config/starship.toml:
-        path: config/starship.toml
-    ~/.zshrc:
-        path: zshrc
-
-- shell:
-    - [git submodule update --init --recursive, Installing submodules]
-
 # Homebrew Install
 - install-brew: true
 
@@ -31,13 +18,28 @@
     - lsd
     - neovim --HEAD
     - fastfetch
+    - rust
     - starship
     - yazi --HEAD
     - zsh
 
 - cask:
+    - logseq
     - wezterm
     - raycast
     - visual-studio-code
     - miniforge
     - font-fira-code-nerd-font
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.config/wezterm/wezterm.lua:
+        path: config/wezterm/wezterm.lua
+    ~/.config/starship.toml:
+        path: config/starship.toml
+    ~/.zshrc:
+        path: zshrc
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
