@@ -1,0 +1,17 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.config/wezterm/wezterm.lua:
+        force: true
+        path: config/wezterm/wezterm.lua
+    ~/.config/starship.toml:
+        force: true
+        path: config/starship.toml
+    ~/.zshrc:
+        force: true
+        path: zshrc
