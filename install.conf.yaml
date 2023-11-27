@@ -25,6 +25,7 @@
 
 - cask:
     - logseq
+    - neteasemusic
     - wezterm
     - raycast
     - visual-studio-code
