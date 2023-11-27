@@ -2,16 +2,40 @@
     link:
         create: true
         relink: true
+        force: true
 
 - clean: ['~']
 
 - link:
     ~/.config/wezterm/wezterm.lua:
-        force: true
         path: config/wezterm/wezterm.lua
     ~/.config/starship.toml:
-        force: true
         path: config/starship.toml
     ~/.zshrc:
-        force: true
         path: zshrc
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
+# Homebrew Install
+- install-brew: true
+
+- tap:
+    - homebrew/cask-fonts
+
+- brew:
+    - bat
+    - btop
+    - fd
+    - git
+    - lsd
+    - neovim --HEAD
+    - starship
+    - yazi --HEAD
+    - zsh
+
+- cask:
+    - wezterm
+    - visual-studio-code
+    - miniforge
+    - font-fira-code-nerd-font
