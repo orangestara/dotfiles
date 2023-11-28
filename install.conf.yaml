@@ -13,6 +13,7 @@
 - brew:
     - bat
     - btop
+    - cheat
     - fd
     - git
     - lsd
@@ -41,6 +42,8 @@
         path: config/starship.toml
     ~/.zshrc:
         path: zshrc
+    ~/.config/cheat:
+        path: config/cheat
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
