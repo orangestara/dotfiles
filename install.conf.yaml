@@ -46,5 +46,11 @@
     ~/.config/zsh:
         path: config/zsh
 
-- shell:
-    - [git submodule update --init --recursive, Installing submodules]
+- if:
+    cond: 'test -d $ZAP_DIR'
+    unmet:
+    - shell:
+        - zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1
+    met:
+    - shell:
+        - echo "zap has installed"

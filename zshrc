@@ -13,7 +13,7 @@ compinit
 eval "$(starship init zsh)"
 
 if [[ -x "$(command -v zoxide)" ]]; then
-  eval "$(zoxide init zsh --hook pwd)"
+    eval "$(zoxide init zsh --hook pwd)"
 fi
 
 # >>> conda initialize >>>
