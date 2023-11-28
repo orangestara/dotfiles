@@ -43,8 +43,8 @@
         path: config/starship.toml
     ~/.zshrc:
         path: zshrc
-    ~/.config/cheat:
-        path: config/cheat
+    ~/.config/zsh:
+        path: config/zsh
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
