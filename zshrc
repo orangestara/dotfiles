@@ -16,6 +16,12 @@ if [[ -x "$(command -v zoxide)" ]]; then
     eval "$(zoxide init zsh --hook pwd)"
 fi
 
+if [[ $(hostname) = "daiyinlongs-MacBook-Pro.local" ]];then
+  plug "$HOME/.config/zsh/work_mac.zsh"
+else
+  echo "personal mac"
+fi
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
