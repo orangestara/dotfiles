@@ -14,5 +14,5 @@ alias lpath='echo $PATH | tr ":" "\n"'
 alias cleanup='fd -H -t f -e DS_Store -X rm'
 
 alias rmf='rm -rf'
-alias ll='lsd -l'
-alias la='lsd -la'
+alias ll='eza -l'
+alias lr='eza -l -T'
