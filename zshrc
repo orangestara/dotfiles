@@ -37,3 +37,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# rust
+export PATH="$HOME/.cargo/bin:$PATH"
