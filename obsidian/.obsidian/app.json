@@ -1,0 +1,8 @@
+{
+  "showInlineTitle": false,
+  "promptDelete": false,
+  "readableLineLength": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00-Index",
+  "attachmentFolderPath": "99-Attachments"
+}
